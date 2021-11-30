@@ -12,38 +12,87 @@
 
   gtag('config', 'G-XVJQ3V25VR');
 </script>
+<style>
+    body {
+      margin:0;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid ol {
+      border-right: 1px solid gray;
+      width:100px;
+      margin: 0;
+      padding: 20px;
+      padding-left: 33px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #article {
+      padding-left: 25px;
+    }
+    @media(max-width: 700px) {
+      h1 {
+        font-size: 30px;
+        text-align: center;
+        border: none;
+      }
+      #grid {
+        display: block;
+      }
+      #grid ol {
+        border: none;
+    }
+</style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">css</a></li>
-    <li><a href="3.html">javascript</a></li>
-  </ol>
-  <h2>Javascript</h2>
-    <p>JavaScript (/ˈdʒɑːvəˌskrɪpt/),[10] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[11] JavaScript is high-level, often just-in-time compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions.</p>
-    <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[12] Over 97% of websites use it client-side for web page behavior,[13] often incorporating third-party libraries.[14] All major web browsers have a dedicated JavaScript engine to execute the code on the user's device.</p>
-    <p>
-      <div id="disqus_thread"></div>
-      <script>
-          /**
-          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-          /*
-          var disqus_config = function () {
-          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-          };
-          */
-          (function() { // DON'T EDIT BELOW THIS LINE
-          var d = document, s = d.createElement('script');
-          s.src = 'https://smilemet.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-          })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
-
+  <div id="grid">
+      <ol>
+        <li><a href="1.html" class="saw">html</a></li>
+        <li><a href="2.html" class="saw">css</a></li>
+        <li><a href="3.html" class="saw active">javascript</a></li>
+      </ol>
+    <div id="article">
+      <h2>Javascript</h2>
+      <p>
+        <span class="js">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/),[10] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[11] <span class="js">JavaScript</span> is high-level, often just-in-time compiled and multi-paradigm. It has dynamic typing, prototype-based object-orientation and first-class functions.
+      </p>
+      <p>
+        Alongside HTML and CSS, <span class="js">JavaScript</span> is one of the core technologies of the World Wide Web.[12] Over 97% of websites use it client-side for web page behavior,[13] often incorporating third-party libraries.[14] All major web browsers have a dedicated <span class="js">JavaScript</span> engine to execute the code on the user's device.
+      </p>
+      <p>
+        <div id="disqus_thread"></div>
+          <script>
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://smilemet.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
+      </div>
+    <div>
 </body>
 </html>
